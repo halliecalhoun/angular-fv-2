@@ -1,0 +1,298 @@
+<p>questions-set1 works!</p>
+
+
+<div class="col-9">
+    <div class="content">
+        <div class="header">
+            <h5>Step 1</h5>
+            <h2>Choose the type of mark you wish to register</h2>
+            <!-- </div> -->
+            <!-- <br> -->
+            <input type="hidden" #selection>
+
+            <div class="card-container">
+                <!-- <p>You've clicked <span (click)="share()" type="submit"></span></p> -->
+                <div class="card card-medium" (click)="selection.value = 'wordmark-card'" tabindex="0">
+                    <!-- <div class="card card-medium" (click)="chosenCard()" type="submit" tabindex="0"> -->
+                    <span class="material-icons" id="word">
+                        search
+
+
+                        <!-- <span>  <i class="material-icons">mode_comment</i></span> -->
+                    <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> -->
+                    <span>
+                            <h3>Word Mark</h3>
+                            <p>Most common use</p>
+                        </span> </span>
+
+                </div>
+
+                <!-- <form class="form" (ngSubmit)="onSubmit()"> -->
+                <!-- <input type="text" name="title" [(ngModel)]="title" placeholder="Add Todo..."> -->
+                <!-- <input type="submit" value="Submit" class="btn"> -->
+                <!-- </form>  -->
+
+                <div class="card card-medium" id="logo-card" (click)="selection.value = 'logo-card'" tabindex="0">
+                    <span class="material-icons" id="search">
+                        image_search
+
+                        <!-- <span>  <i class="material-icons">mode_comment</i></span> -->
+                    <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> -->
+                    <br>
+                    <span>
+                            <h3>Logo Mark</h3>
+                            <p>Most common use</p>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="card card-medium" id="combined-card" (click)="selection.value = 'component'" tabindex="0">
+                    <span class="material-icons" id="search">
+                        burst_mode
+
+                        <!-- <span>  <i class="material-icons">mode_comment</i></span> -->
+                    <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> -->
+                    <br>
+                    <span>
+                            <h3>Combined Mark</h3>
+                            <p>Most common use</p>
+                        </span></span>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="content">
+                    <div class="header">
+                        <h5>Step 2</h5>
+                        <h2>Search if your Word Mark is available</h2>
+                        <!-- </div> -->
+                        <!-- <br> -->
+
+
+                        <input type="hidden" #selection>
+                        <div class="input-group" id="search-bar">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">
+                                    <span class="material-icons" id="search">search</span>
+                                </span>
+                                <input type="text" class="form-control" id="search-box" placeholder="Enter name or phrase..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+
+                        <!-- <div class="card w-100"> -->
+                        <!-- <div class="card w-100">
+                                <div class="card-body"> -->
+
+                        <!-- <h5 class="card-title">Card title</h5>
+                                    <span class="material-icons">search</span>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+
+                        <!-- </div>
+                            </div> -->
+                        <div class="jumbotron jumbotron-fluid" id="gray-box">
+                            <div class="container" id="jumbo">
+                                <!-- <span class="material-icons" id="info">info</span> -->
+                                <!-- <span> <h4 class="display-5">Card title </h4> -->
+                                <!-- </span> -->
+
+                                <div class="row" id="jumbo">
+                                    <div class="col-sm-1">
+                                        <span class="material-icons" id="info">info</span>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <p class="lead ">Brainbase provides comprehensive search on millions of all US Federal, State and International marks.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="play-container ">
+                            <p>You've clicked <span (click)="countClick() ">this</span> {{ clickCounter }} times</p>
+                        </div>
+
+                        <h5>Step 3</h5>
+                        <h2>How will you use the mark?</h2>
+                        <!-- </div> -->
+                        <!-- <br> -->
+                        <div class="input-group mb-3 ">
+                            <!-- <div class="input-group-prepend "> -->
+                            <!-- <button class="btn btn-outline-secondary " type="button ">Button</button> -->
+                            <!-- </div> -->
+                            <select class="custom-select " id="inputGroupSelect03 " aria-label="Example select with button addon ">
+                                <option selected>Select Usage of your Trademark</option>
+                                <option value="1 ">One</option>
+                                <option value="2 ">Two</option>
+                                <option value="3 ">Three</option>
+                            </select>
+                        </div>
+                        <!-- <select class="form-control " placeholder="Select usage of your trademark ">
+                                <option>Select usage of your trademark</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                              </select> -->
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- <div class="card border-secondary mb-3 " style="max-width: 18rem; ">
+                                <div class="card-header ">Header</div>
+                                <div class="card-body text-secondary ">
+                                    <h5 class="card-title ">Secondary card title</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div> -->
+                        <!-- </div> -->
+
+                        <!-- <div class="card w-100 " id="gray-box ">
+                                    <div class="card-body " id="gray-body ">
+                                        <span class="material-icons ">search
+                                    <h5 class="card-title " id="card-icon ">Card title</h5>
+                                   </span> -->
+                        <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p> -->
+                        <!-- <a href="# " class="btn btn-primary ">Button</a> -->
+                        <!-- </div>
+                                </div>
+                            </div> -->
+
+
+
+                        <!-- <div class="col-md-9 "> -->
+                        <div class="step2 ">
+
+                            <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value) ">
+                                <!-- <form> -->
+                                <div>
+                                    <label for="name ">
+                                            Name
+                                        </label>
+                                    <input id="name" type="text " formControlName="form-name">
+                                </div>
+                                <div>
+                                    <label for="address ">
+                                            Address
+                                        </label>
+                                    <input id="address" type="text " formControlName="form-address">
+                                </div>
+                                <button type="submit " class="btn btn-primary mb-2 ">Submit</button>
+                                <!-- <form class="form-inline"> -->
+                                <!-- <form class="form-inline my-2 my-lg-0"> -->
+                                <div class="form-group mb-2 ">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text " id="inputGroup-sizing-default ">
+                                                    <span class="material-icons " id="search ">search</span>
+                                        </span>
+                                    </div>
+                                    <input type="text " class="form-control " placeholder="Enter name or phrase... " aria-label="Sizing example input " aria-describedby="inputGroup-sizing-default ">
+                                    <!-- </div> -->
+                                    <!-- <label for="staticEmail2 " class="sr-only ">Email</label>
+                                            <input type="text " readonly class="form-control-plaintext " id="staticEmail2 " value="email@example.com "> -->
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2 ">
+                                    <label for="inputPassword2 " class="sr-only ">Password</label>
+                                    <input type="password " class="form-control " id="inputPassword2 " placeholder="Password ">
+                                </div>
+
+                                <button type="submit " class="btn btn-primary mb-2 ">Confirm
+                                            identity</button>
+                                <!-- </form> -->
+
+
+
+                                <!-- <div class="form-group mx-sm-3 mb-2 "> -->
+                                <input type="hidden " #selection>
+                                <div class="input-group mb-3 " id="search-bar ">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text " id="inputGroup-sizing-default ">
+                                                <span class="material-icons " id="search ">search</span>
+                                        </span>
+                                    </div>
+                                    <!-- </div> -->
+                                    <!-- </div> -->
+                                    <input type="text " class="form-control " placeholder="Enter name or phrase... " aria-label="Sizing example input " aria-describedby="inputGroup-sizing-default ">
+                                </div>
+                                <!-- </div> -->
+                                <button type="submit " class="btn btn-primary mb-2 ">Submit</button>
+                            </form>
+                            <!-- </form> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="input-group mb-3 ">
+                    <div class="input-group-prepend ">
+                        <label class="input-group-text " for="inputGroupSelect01 ">Options</label>
+                    </div>
+                    <select class="custom-select " id="inputGroupSelect01 ">
+                        <option selected>Choose...</option>
+                        <option value="1 ">One</option>
+                        <option value="2 ">Two</option>
+                        <option value="3 ">Three</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3 ">
+                    <select class="custom-select " id="inputGroupSelect02 ">
+                        <option selected>Choose...</option>
+                        <option value="1 ">One</option>
+                        <option value="2 ">Two</option>
+                        <option value="3 ">Three</option>
+                    </select>
+                    <div class="input-group-append ">
+                        <label class="input-group-text " for="inputGroupSelect02 ">Options</label>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3 ">
+                    <!-- <div class="input-group-prepend "> -->
+                    <!-- <button class="btn btn-outline-secondary " type="button ">Button</button> -->
+                    <!-- </div> -->
+                    <select class="custom-select " id="inputGroupSelect03 " aria-label="Example select with button addon ">
+                        <option selected>Choose...</option>
+                        <option value="1 ">One</option>
+                        <option value="2 ">Two</option>
+                        <option value="3 ">Three</option>
+                    </select>
+                </div>
+
+                <div class="input-group ">
+                    <select class="custom-select " id="inputGroupSelect04 " aria-label="Example select with button addon ">
+                        <option selected>Choose...</option>
+                        <option value="1 ">One</option>
+                        <option value="2 ">Two</option>
+                        <option value="3 ">Three</option>
+                    </select>
+                    <div class="input-group-append ">
+                        <button class="btn btn-outline-secondary " type="button ">Button</button>
+                    </div>
+                </div>
+
+
+                <!-- <div class="col " id="step3 ">
+                    <div class="content ">
+                        <div class="header ">
+                            <h5>Step 3</h5>
+                            <h2>How will you use the Mark?</h2>
+                            </div> -->
+                <!-- <br>
+                <input type="hidden " #selection>
+
+            </div>
+        </div>
+    </div>
+    -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->

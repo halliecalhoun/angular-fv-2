@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
+// import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AreaComponent } from './widgets/area/area.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -67,21 +67,34 @@ import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 // import { MAT_GRID_LIST } from '@angular/material/grid-list/grid-list-base';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { GraySidebarComponent } from './components/gray-sidebar/gray-sidebar.component';
+import { QuestionsSet1Component } from './components/questions-set1/questions-set1.component';
+import { QuestionsSet2Component } from './components/questions-set2/questions-set2.component';
+// import { ModalTopbarComponent } from './components/modal-topbar/modal-topbar.component';
+import { MaterialModule } from '../material/material.module';
+import { OrderFormModule } from '../layouts/order-form/order-form.module';
+
 
 @NgModule({
   declarations: [
     // HeaderComponent,
     FooterComponent,
-    // SidebarComponent,
+   
     AreaComponent,
     SidenavComponent,
-    // ToolbarComponent,
+    GraySidebarComponent,
+    QuestionsSet1Component,
+    QuestionsSet2Component,
+    // ModalTopbarComponent,
+
     // PropertiesListComponent
     // PostsComponent
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
+    MaterialModule, 
     // AreaComponent,
     // AreaComponent,
     // SidenavComponent,
@@ -151,7 +164,7 @@ import { FormBuilder } from '@angular/forms';
     // MatGrid
     // MAT_GRID_LIST,
     MatCardModule,
-    
+    OrderFormModule,
     //  MatGridTile,
     //  MatGridList,
     // MatTooltipModule,
@@ -164,9 +177,12 @@ import { FormBuilder } from '@angular/forms';
   exports: [
     // HeaderComponent,
     FooterComponent,
-    // SidebarComponent,
     AreaComponent,
     SidenavComponent,
+    GraySidebarComponent,
+    QuestionsSet1Component,
+    QuestionsSet2Component,
+    // ModalTopbarComponent,
     // ToolbarComponent,
     // MatListModule,
     // MatGridListModule,

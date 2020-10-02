@@ -13,15 +13,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { OrderFormComponent } from './order-form.component';
+import { GraySidebarComponent } from 'src/app/shared/components/gray-sidebar/gray-sidebar.component';
+import { QuestionsSet1Component } from 'src/app/shared/components/questions-set1/questions-set1.component';
+// import { ModalTopbarComponent } from 'src/app/shared/components/modal-topbar/modal-topbar.component';
 
 
 @NgModule({
   declarations: [
-    // OrderFormComponent,
+    OrderFormComponent,
     StepOneComponent,
-    // StepTwoçComponent,
-    // StepThreeComponent,
-    // StepFourComponent
+    GraySidebarComponent,
+    QuestionsSet1Component,
+
   ],
   imports: [
     CommonModule,
@@ -33,6 +36,13 @@ import { OrderFormComponent } from './order-form.component';
     ReactiveFormsModule,
     RouterModule,
     SharedModule,
+    
+  ],
+  exports: [
+    OrderFormComponent,
+    StepOneComponent,
+    GraySidebarComponent,
+    QuestionsSet1Component,
   ]
 })
 export class OrderFormModule { }
