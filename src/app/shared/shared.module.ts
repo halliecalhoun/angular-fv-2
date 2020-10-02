@@ -76,7 +76,7 @@ import { FormBuilder } from '@angular/forms';
     // SidebarComponent,
     AreaComponent,
     SidenavComponent,
-    ToolbarComponent,
+    // ToolbarComponent,
     // PropertiesListComponent
     // PostsComponent
   ],
@@ -167,7 +167,7 @@ import { FormBuilder } from '@angular/forms';
     // SidebarComponent,
     AreaComponent,
     SidenavComponent,
-    ToolbarComponent,
+    // ToolbarComponent,
     // MatListModule,
     // MatGridListModule,
     // MatGridListModule,
