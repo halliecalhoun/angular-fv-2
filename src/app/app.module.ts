@@ -7,7 +7,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { AreaComponent } from './shared/widgets/area/area.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+// import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { PostsComponent } from './modules/posts/posts.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
@@ -15,7 +15,7 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { DefaultModule } from './layouts/default/default.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PropertiesListComponent } from './pages/properties-list/properties-list.component';
-import { OrderFormComponent } from './layouts/order-form/order-form.component';
+// import { OrderFormComponent } from './layouts/order-form/order-form.component';
 import { AngularNavComponent } from './angular-nav/angular-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -41,7 +41,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { OrderFormModule } from './layouts/order-form/order-form.module';
+// import { OrderFormModule } from './layouts/order-form/order-form.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialModule } from './material/material.module';
 
@@ -60,7 +60,6 @@ import { MaterialModule } from './material/material.module';
     // AreaComponent,
     // HeaderComponent,
     // FooterComponent,
-    // SidebarComponent,
     // PostsComponent,
     // DashboardComponent,
     // DefaultComponent
@@ -91,7 +90,7 @@ import { MaterialModule } from './material/material.module';
     MatRadioModule,
     ReactiveFormsModule,
     MatRadioModule,
-    OrderFormModule,
+    // OrderFormModule,
     MatIconModule,
     
     NgbModule,

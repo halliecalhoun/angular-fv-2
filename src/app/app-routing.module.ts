@@ -12,6 +12,7 @@ import { AngularTreeComponent } from './angular-tree/angular-tree.component';
 import { AngularDragDropComponent } from './angular-drag-drop/angular-drag-drop.component';
 import { StepOneComponent } from './layouts/order-form/steps/step-one/step-one.component';
 import { OrderFormComponent } from './layouts/order-form/order-form.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
@@ -28,7 +29,7 @@ const routes: Routes = [
 },
   {
     path: '',
-    component: DefaultComponent,
+    component: AppComponent,
       children: [{
         path: '',
         component: AngularDashboardComponent
