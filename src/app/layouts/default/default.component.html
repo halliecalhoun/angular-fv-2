@@ -1,0 +1,73 @@
+<!-- <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header> -->
+<!-- <storybook-button></storybook-button> -->
+<!-- <app-header></app-header> -->
+<!-- <mat-drawer-container> -->
+
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+
+        <!-- <p>Auto-resizing sidenav</p> -->
+        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+        <!-- <button mat-icon-button (click)="showFiller = !showFiller" mat-raised-button>
+                    Toggle extra text
+                  </button> -->
+
+        <h1> <span class="File"><img src="../../assets/img/File.png">File
+      </span></h1>
+        <!-- <h2 matSubheader>File</h2> -->
+
+
+        <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a> -->
+        <!-- <h3><a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Properties</a></h3> -->
+        <mat-list role="list">
+            <app-sidenav></app-sidenav>
+            <!-- <h3><a mat-list-item routerLinkActive="list-item-active" routerLink="/properties">File Trademark</a> -->
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">Dashboard 2</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/properties-list">Properties</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">List</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/step-one">Step One</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/order-form">Order Form</a>
+
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/angular-table">Table</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/angular-drag-drop">Drag & Drop</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/angular-nav">Nav 2</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/angular-address-form">Address Form</a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/angular-tree">Tree</a>
+            <!-- </h3> -->
+        </mat-list>
+    </mat-drawer>
+
+
+
+    <!-- </mat-drawer-container> -->
+    <!-- <mat-drawer mode="side" [opened]="sideBarOpen"> -->
+    <!-- <app-sidebar></app-sidebar> -->
+    <app-toolbar></app-toolbar>
+    <app-sidenav></app-sidenav>
+    <!-- <sidenav-responsive-example></sidenav-responsive-example> -->
+    <!-- </mat-drawer> -->
+    <mat-drawer-content>
+        <div class="example-sidenav-content">
+            <!-- <button mat-icon-button (click)="toggleSideBar()"> 
+               <mat-icon>menu</mat-icon>
+                        </button> -->
+            <h2>
+                <mat-button-toggle (click)="drawer.toggle()" value="center" aria-label="Text align center">
+                    <mat-icon>format_align_center</mat-icon>
+                    <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon> -->
+                </mat-button-toggle>
+                Dashboard
+            </h2>
+            <!-- <button class="btn btn-white my-2 my-sm-0" mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon>
+                   
+                  </button> -->
+        </div>
+        <router-outlet></router-outlet>
+
+    </mat-drawer-content>
+</mat-drawer-container>
+
+<!-- <app-task-view></app-task-view> -->
+<!-- <app-footer></app-footer> -->
